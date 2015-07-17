@@ -30,7 +30,8 @@ function needsEncapsulation (string) {
           string.toString().indexOf(char(CSV.DELIMITER)) >= 0 ||
           string.toString().indexOf(char(CSV.CHAR_RETURN)) >= 0 ||
           string.toString().indexOf(char(CSV.CHAR_NEWLINE)) >= 0 ||
-          string.toString().indexOf(char(CSV.CHAR_ENCAPSULATE)) >= 0
+          string.toString().indexOf(char(CSV.CHAR_ENCAPSULATE)) >= 0 ||
+          string.toString().match(/^0/)
         );
 }
 
